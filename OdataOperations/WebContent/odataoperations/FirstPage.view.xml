@@ -1,0 +1,30 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="odataoperations.FirstPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Odata Operations">
+		<content>
+		<html:style>
+    .sapMBtn {
+    height: 3.0rem;
+    min-width: 3.0rem;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background-color: #8B90B3;
+    border: 1px solid #bfbfbf;
+    color: #333333;
+    text-shadow: 0 1px 0 #ffffff;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.875rem
+}
+   </html:style>
+  
+
+     <Image id="img1" alt="alttextimage" src="C:\Users\Public\Pictures\Sample Pictures\Tulips2.png" />  
+	 <Button id="button1" text="create" width="100px" press="onCreate" ></Button>
+	 <Button id="button2" text="update" width="100px" press="onUpdate" ></Button>
+	  <Button id="button3" text="delete" width="100px" press="onDelete" ></Button>
+	   <Button id="button4" text="read" width="100px" press="onRead" ></Button>
+	   
+		</content>
+	</Page>
+</core:View>
