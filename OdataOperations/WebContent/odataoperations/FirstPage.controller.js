@@ -5,13 +5,7 @@ sap.ui.controller("odataoperations.FirstPage", {
 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 * @memberOf odataoperations.FirstPage
 */
-	/*onInit: function() {
-		 var serviceUrl = "proxy/sap/opu/odata/IWFND/RMTSAMPLEFLIGHT/";  
-         var oModel = new sap.ui.model.odata.ODataModel(serviceUrl,false,"p1794163851","Anjali1#", null,null, null,false);	
-         //console.log(oModel);
-         sap.ui.getCore().setModel(oModel);
-	},
-	*/
+	
 	onInit: function() {
 		var appid="com.sap.myflight";
 		var context={
@@ -22,7 +16,7 @@ sap.ui.controller("odataoperations.FirstPage", {
 	},	
 	onCreate: function(){
 		 var serviceUrl = "/TravelagencyCollection";  
-         //var oModel = new sap.ui.model.odata.ODataModel(serviceUrl,false,"p1794163851","Anjali1#", null,null, null,false);	
+        	
          console.log(oModel);
          //sap.ui.getCore().setModel(oModel);
          var parameters={
@@ -38,14 +32,14 @@ sap.ui.controller("odataoperations.FirstPage", {
 
 onDelete: function(){
 	 var serviceUrl = "/TravelagencyCollection";  
-     //var oModel = new sap.ui.model.odata.ODataModel(serviceUrl,false,"p1794163851","Anjali1#", null,null, null,false);	
+    
      console.log(oModel);
      oModel.remove("/TravelagencyCollection('00000698')");
 },
 
 onRead: function(){
 	 var serviceUrl = "/CarrierCollection";  
-     //var oModel = new sap.ui.model.odata.ODataModel(serviceUrl,false,"p1794163851","Anjali1#", null,null, null,false);	
+    	
      console.log(oModel);
      oModel.read("/CarrierCollection");
 },
